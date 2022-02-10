@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+</body>
+<script>
+  let k = parseInt(prompt('nhập vào số n :'))
+    let i = 1;
+    //nếu i=0 thì trả về chuỗi số sẽ có k+1 phần tử
+    let n1 = 1;
+    let n2 = 1;
+    let n3;
+  document.write('Dãy số Finonacci : ' )
+    //Note that write() does NOT add a new line after each statement
+    while (k <= 0) {
+        alert(' nhập số lớn hơn 0 đi ông :"( ')
+        k = parseInt(prompt('nhập vào số n :'))
+
+    }
+    //vòng lặp yêu cầu người dùng nhập đúng số
+    while (i <= k) {
+        console.log(' dãy số fibonacci: ', n1)
+        document.write(n1+'  ')
+        // thực hiện in ra số trước khi tiếp tục gán
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        i++;
+    }
+</script>
+</html>
